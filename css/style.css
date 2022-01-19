@@ -1,0 +1,201 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.wraper {
+    border: 2px solid #f57c00;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    color: #fff;
+    margin: 20px 0 20px 0;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.busca {
+    display: flex;
+    width: 400px;
+    margin: 20px 30px;
+}
+
+.busca #searchInput {
+    flex: 1;
+    padding: 15px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.busca button {
+    padding: 0px 25px;
+    font-size: 15px;
+    border: 0;
+    background: linear-gradient(to right, #f57c00, #ff9800);
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.busca button:hover {
+    background: transparent;
+    box-shadow: inset 0 0 0 2px #f57c00;
+}
+
+.resultado {
+    width: 400px;
+    display: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+}
+
+.info .temp,
+.info .vento {
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.separador {
+    border: 1px solid #f57b005e;
+    margin-top: 40px;
+    height: 150px;
+}
+
+.amplitude {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tempAmplitude {
+    padding: 0.3rem;
+}
+
+.tempAmplitude i {
+    font-size: 1rem;
+    margin-right: 0.1rem;
+}
+
+.tempMax {
+    color: rgb(255, 133, 133);
+}
+
+.tempMin {
+    color: rgb(133, 133, 255);
+}
+
+.tempTitulo,
+.ventoTitulo {
+    color: #777;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.tempInfo,
+.ventoInfo {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3rem;
+    height: 59px;
+}
+
+.tempInfo sup {
+    font-size: 1rem;
+    margin-left: 5px;
+    font-weight: lighter;
+}
+
+.ventoInfo span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.ventoArea {
+    width: 150px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px;
+    padding-left: 25px;
+    border: 1px solid #FFF;
+    border-radius: 50%; */
+}
+
+.ventoArea .rosa {
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    position: absolute;
+}
+
+.ventoArea .ponteiro {
+    width: 130px;
+    height: 130px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 200;
+}
+
+.ventoPonto {
+    width: 15px;
+    height: 1px;
+    background-color: #fff;
+    transform-origin: left;
+}
+
+.aviso {
+    color: rgb(235, 62, 62);
+    padding: 20px;
+}
+
+footer {
+    color: #f57c00;
+    font-size: 13px;
+    align-self: flex-end;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    ;
+}
